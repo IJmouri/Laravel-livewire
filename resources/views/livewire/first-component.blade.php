@@ -18,12 +18,12 @@
         <button wire:loading.attr="disabled" class="btn btn-primary my-2">Add Item</button>
 
     </form>
-    <div wire:loading class="spinner-border text-primary" role="status">
+    <div wire:loading.delay class="spinner-border text-primary" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
-    <div wire:loading> 
+    <!-- <div wire:loading> 
         Saving todo item...
-    </div>
+    </div> -->
     <div class="shadow p-4 my-3">
         <h3>Todo List</h3>
         <ul class="mt-2">
