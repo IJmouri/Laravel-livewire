@@ -8,6 +8,9 @@
     <title>Laravel Livewire</title>
 </head>
 <body>
-    @livewire('Navigate')
+    <!-- @livewire('Dashboard') -->
+    <div>
+        {{ $slot }}
+    </div>
 </body>
 </html>

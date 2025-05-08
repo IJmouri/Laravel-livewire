@@ -3,8 +3,10 @@
 namespace App\Livewire;
 use App\Models\Todo;
 use Livewire\Component;
+use Livewire\Attributes\Layout;
 use Livewire\withPagination;
 
+#[Layout('layout.app')]
 class FirstComponent extends Component
 {
     use withPagination;

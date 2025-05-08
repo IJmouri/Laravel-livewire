@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Dashboard;
+use App\Livewire\FirstComponent;
+// use App\Livewire\ShowUsers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+ 
+Route::get('/dashboard', Dashboard::class);
+ 
+Route::get('/posts', FirstComponent::class);
+ 
+// Route::get('/users', ShowUsers::class);
 Route::get('/', function () {
     return view('welcome');
 });
